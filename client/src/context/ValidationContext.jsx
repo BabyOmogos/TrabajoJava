@@ -2,7 +2,6 @@ import { createContext, useContext } from 'react';
 
 const ValidationContext = createContext(null);
 
-/** Letras permitidas en matrícula (enunciado actividad 2ª eval.). */
 const LETRAS_MATRICULA = 'BCDEFGHJKLMNPRSTVWXYZ';
 
 const regexIdPoliza = /^ID\d{5}$/;
@@ -80,7 +79,6 @@ const validationValue = {
   validarPoliza,
 };
 
-/** Proveedor de validación (regex y reglas del enunciado). */
 export function ValidationProvider({ children }) {
   return (
     <ValidationContext.Provider value={validationValue}>{children}</ValidationContext.Provider>

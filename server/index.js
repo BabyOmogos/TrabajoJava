@@ -105,7 +105,6 @@ app.post('/polizas', async (req, res) => {
   }
 });
 
-/** Actualización REST: el identificador va en la URL (PUT /polizas/:id_poliza). */
 app.put('/polizas/:id_poliza', async (req, res) => {
   try {
     const id = req.params.id_poliza;
