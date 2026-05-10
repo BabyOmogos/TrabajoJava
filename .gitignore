@@ -1,0 +1,21 @@
+# Dependencias
+node_modules/
+
+# Compilado / build
+dist/
+client/dist/
+
+# Logs y sistema
+*.log
+.DS_Store
+Thumbs.db
+
+# Entorno (secretos)
+.env
+.env.*
+!.env.example
+
+# Metadatos de editores (no necesarios para ejecutar la app)
+.idea/
+*.swp
+*~
